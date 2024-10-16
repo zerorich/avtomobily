@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоМаркет - Продажа автомобилей</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>АвтоМаркет</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать в АвтоМаркет</h2>
+            <p>Лучшие автомобили по выгодным ценам</p>
+        </section>
+
+        <section id="catalog">
+            <h2>Наш каталог</h2>
+            <div class="cars_wrapper">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Красный спортивный автомобиль">
+                    <h3>Спортивный автомобиль</h3>
+                    <p>Мощный и стильный спортивный автомобиль для любителей скорости</p>
+                    <button onclick="window.location.href='buy.html?id=1'">Купить</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Синий семейный автомобиль">
+                    <h3>Семейный автомобиль</h3>
+                    <p>Комфортный и просторный автомобиль для всей семьи</p>
+                    <button onclick="window.location.href='buy.html?id=2'">Купить</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Черный внедорожник">
+                    <h3>Внедорожник</h3>
+                    <p>Надежный и мощный внедорожник для любых дорожных условий</p>
+                    <button onclick="window.location.href='buy.html?id=3'">Купить</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <p>АвтоМаркет - ваш надежный партнер в выборе автомобиля с 2005 года. Мы гордимся тем, что предлагаем широкий ассортимент качественных автомобилей по доступным ценам.</p>
+                
+                <h3>Наши преимущества:</h3>
+                <ul>
+                    <li>Более 15 лет опыта на автомобильном рынке</li>
+                    <li>Огромный выбор новых и подержанных автомобилей</li>
+                    <li>Профессиональные консультации от экспертов</li>
+                    <li>Выгодные условия кредитования и лизинга</li>
+                    <li>Гарантийное обслуживание и поддержка</li>
+                </ul>
+                
+                <h3>Наша миссия</h3>
+                <p>Мы стремимся сделать процесс покупки автомобиля максимально простым, приятным и выгодным для каждого клиента. Наша цель - не просто продать автомобиль, а помочь вам найти идеального спутника на дороге.</p>
+                
+                <h3>Почему выбирают нас</h3>
+                <p>АвтоМаркет - это не просто автосалон, это команда профессионалов, влюбленных в свое дело. Мы постоянно следим за новинками автомобильного рынка, посещаем международные выставки и поддерживаем партнерские отношения с ведущими производителями.</p>
+                
+                <h3>Наши услуги</h3>
+                <ul>
+                    <li>Продажа новых и подержанных автомобилей</li>
+                    <li>Trade-in</li>
+                    <li>Кредитование и лизинг</li>
+                    <li>Страхование</li>
+                    <li>Сервисное обслуживание</li>
+                    <li>Установка дополнительного оборудования</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться</h2>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 АвтоМаркет. Все права защищены.</p>
+    </footer>
+</body>
+</html>

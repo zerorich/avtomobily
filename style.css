@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 2rem;
+    position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: -2rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.1rem; /* Немного увеличен размер шрифта */
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.cars_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-shadow: 10px -10px 20px rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px -10px 30px rgb(255, 0, 0);
+    transition: 1s;
+}
+
+.card > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.card > p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#catalog h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#home {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#home h2 {
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#about {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.about-content ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.about-content li {
+    margin-bottom: 0.5rem;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#buy-car {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#car-details {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#buy-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#buy-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+#buy-form button {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#buy-form button:hover {
+    background-color: #0056b3;
+}

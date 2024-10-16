@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка автомобиля - АвтоМаркет</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>АвтоМаркет</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html#catalog">Каталог</a></li>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="buy-car">
+            <h2>Покупка автомобиля</h2>
+            <div id="car-details"></div>
+            <form id="buy-form">
+                <h3>Данные покупателя</h3>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
+                <button type="submit">Оформить заказ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 АвтоМаркет. Все права защищены.</p>
+    </footer>
+
+    <script src="database.js"></script>
+    <script src="buy.js"></script>
+</body>
+</html>
